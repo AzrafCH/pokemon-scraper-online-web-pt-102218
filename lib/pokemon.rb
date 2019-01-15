@@ -1,5 +1,6 @@
 class Pokemon
 
+<<<<<<< HEAD
 attr_accessor :id, :name, :type, :db, :hp
 
   def initialize(keywords)
@@ -26,4 +27,17 @@ attr_accessor :id, :name, :type, :db, :hp
      db.execute("UPDATE pokemon SET hp = ? WHERE id = ?", [num], [self.id])
      self.hp = num
    end
+=======
+attr_accesor :id, :name, :type, :db
+
+def initialize()
+
+end
+
+
+
+def self.save(name, type, db)
+
+end
+>>>>>>> 1bc9f223234314965ff05e743ddbb70196a08470
 end
